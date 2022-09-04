@@ -24,7 +24,7 @@ export default function App() {
   return (
     <Box sx={layout} component="form" onSubmit={handleSubmit(handleOnSubmit)}>
       <Box sx={container}>
-        <FormInput control={control} name="FormInput" validator={timeValidator} label={'Input'} />
+        <FormInput control={control} name="FormInput" validator={timeValidator} label={'Input'} type="number" />
         <FormTagInput control={control} name="TagInput" label={'TagInput'} />
         <Button type="submit">Submit</Button>
       </Box>
